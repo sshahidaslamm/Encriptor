@@ -39,8 +39,8 @@
     bufferPtr = malloc( bufferPtrSize * sizeof(uint8_t));
     memset((void *)bufferPtr, 0x0, bufferPtrSize);
     
-    const unsigned char *keyString = (const unsigned char *)[@"AMAF#Key$M0BiLE!WS@DG_1@"  cStringUsingEncoding: NSUTF8StringEncoding];
-    const unsigned char *initializeVactorString = (const unsigned char *)[@"AMAF@DG#" cStringUsingEncoding: NSUTF8StringEncoding];
+    const unsigned char *keyString = (const unsigned char *)[@"THISWILLBEYOURKEY"  cStringUsingEncoding: NSUTF8StringEncoding];
+    const unsigned char *initializeVactorString = (const unsigned char *)[@"ANYWORD" cStringUsingEncoding: NSUTF8StringEncoding];
     
     uint8_t iv[kCCBlockSize3DES];
     memset((void *) iv, 0x0, (size_t) sizeof(iv));
